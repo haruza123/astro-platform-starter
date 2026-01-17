@@ -1,0 +1,36 @@
+---
+import Logo from './Logo.astro';
+---
+
+<header class="sticky top-0 z-50 w-full bg-white shadow-md">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+                <Logo />
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#beranda" class="text-cempaka-emerald hover:text-cempaka-emerald-dark font-medium transition-colors">
+                    Beranda
+                </a>
+                <a href="#produk" class="text-gray-700 hover:text-cempaka-emerald font-medium transition-colors">
+                    Produk
+                </a>
+                <a href="#tentang" class="text-gray-700 hover:text-cempaka-emerald font-medium transition-colors">
+                    Tentang
+                </a>
+                <a href="#kontak" class="text-gray-700 hover:text-cempaka-emerald font-medium transition-colors">
+                    Kontak
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 hover:text-cempaka-emerald transition-colors" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+

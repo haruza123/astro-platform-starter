@@ -1,15 +1,20 @@
 {
-    "name": "cempakadapur-catalog",
+    "name": "dapur-cempaka",
+    "type": "module",
     "version": "1.0.0",
-    "description": "Website katalog kue Cempaka Dapur - HTML, CSS, JavaScript",
     "scripts": {
-        "start": "npx http-server -p 8000"
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
     },
-    "keywords": [
-        "catalog",
-        "cake",
-        "cempakadapur"
-    ],
-    "author": "Cempaka Dapur",
-    "license": "ISC"
+    "dependencies": {
+        "astro": "^5.16.10",
+        "@astrojs/tailwind": "^5.2.1",
+        "tailwindcss": "^3.4.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.7"
+    }
 }
