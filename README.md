@@ -1,43 +1,52 @@
-# Astro on Netlify Platform Starter
+# Website Katalog Kue - Cempaka Dapur
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+Website katalog sederhana untuk toko kue Cempaka Dapur, dibangun menggunakan HTML, CSS, dan JavaScript murni (vanilla JS).
 
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blobs).
+## Deskripsi
 
-## Astro Commands
+Website ini menampilkan katalog kue tradisional dan modern yang tersedia di Cempaka Dapur. Pengunjung dapat melihat berbagai jenis kue, filter berdasarkan kategori, dan mendapatkan informasi kontak toko.
 
-All commands are run from the root of the project, from a terminal:
+## Fitur
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- ✅ Katalog kue dengan informasi lengkap
+- ✅ Filter berdasarkan kategori (Tradisional, Modern, Kue Basah, Kue Kering)
+- ✅ Navigasi smooth scroll
+- ✅ Desain responsif untuk mobile dan desktop
+- ✅ Informasi tentang perusahaan
+- ✅ Kontak dan informasi toko
 
-## Deploying to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
-
-## Developing Locally
-
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v18.20.8+.                                    |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. Recommended: link your local repository to a Netlify project. This will ensure you're using the same runtime version for both local development and your deployed project.
+## Struktur File
 
 ```
-netlify link
+├── index.html          # Halaman utama
+├── css/
+│   └── style.css      # Styling website
+├── js/
+│   └── script.js      # JavaScript untuk interaktivitas
+└── README.md          # Dokumentasi
 ```
 
-3. Run the Astro.js development server:
+## Cara Menggunakan
 
-```
-npm run dev
-```
+1. Buka file `index.html` di browser web modern
+2. Atau gunakan local server untuk development:
+   ```bash
+   # Menggunakan Python
+   python -m http.server 8000
+   
+   # Menggunakan Node.js (jika ada http-server)
+   npx http-server
+   ```
+3. Akses melalui browser di `http://localhost:8000`
+
+## Teknologi
+
+- **HTML5** - Struktur halaman
+- **CSS3** - Styling dan layout
+- **Vanilla JavaScript** - Interaktivitas dan filter
+
+## Catatan
+
+Website ini adalah website statis sederhana yang tidak memerlukan build process atau dependencies tambahan. Semua kode dapat dibuka langsung di browser.
+
+© 2024 Cempaka Dapur. Semua hak dilindungi.
